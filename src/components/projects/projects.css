@@ -1,0 +1,101 @@
+.projects-section{
+  margin-top: 20px;
+  padding-bottom: 50px;
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects-section h1{
+  color: #ba9502;
+  margin-bottom: 25px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.pro .card {
+  position: relative;
+  width: 100%;
+  height: 200px;  
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  background-color:rgb(45, 41, 41);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 0;
+  color: #ba9502;
+}
+
+.card-content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.873);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: bottom 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+}
+
+.card:hover .card-content {
+  bottom: 0;
+}
+
+.card-content p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #bc5815;
+}
+
+.card-content a {
+  color: #ba9502;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #ba9502;
+}
+
+/* Center last card if it's alone in a new row */
+.pro .card:last-child:nth-child(odd) {
+  grid-column: -3 / -2;
+  justify-self: center;
+}

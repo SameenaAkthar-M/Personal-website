@@ -22,7 +22,7 @@ const Home = () => {
         </a>
       </div>
       <div className="btn">
-        <button>Download Resume</button>
+        <button><a href="/resume.pdf" download="SameenaM-Resume.pdf">Download Resume</a></button>
       </div>
       <div className="scroll-btn">
         <button className='scrolling'><div className="roun"></div></button>

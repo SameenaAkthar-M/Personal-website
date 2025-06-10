@@ -42,7 +42,7 @@ const About = () => {
     <div ref={aboutRef} className='about-section'>
       <h1 ref={headingRef}>About Me</h1>
       <div className="content"  ref={contentRef}>
-        <p>Hi! I'm Sameena Akthar. I'm an aspiring Full-Stack Developer with a strong passion for crafting engaging user interfaces and building responsive web applications. I love designing modern, animated frontends and turning ideas into functional digital experiences. Driven by curiosity and a problem-solving mindset, I constantly seek opportunities to learn and stay up to date with emerging technologies. My goal is to create meaningful solutions that blend good design with solid development.</p>
+        <p>Hi! I'm Sameena Akthar. I'm an aspiring Web Developer with a strong passion for crafting engaging user interfaces and building responsive web applications. I love designing modern, animated frontends and turning ideas into functional digital experiences. Driven by curiosity and a problem-solving mindset, I constantly seek opportunities to learn and stay up to date with emerging technologies. My goal is to create meaningful solutions that blend good design with solid development.</p>
       </div>
     </div>
     </div>

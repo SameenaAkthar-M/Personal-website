@@ -36,3 +36,9 @@
 .language {
   margin-bottom: 30px;
 }
+
+@media (max-width: 768px) {
+  .skills-section{
+    height: 80vh;
+  }
+}

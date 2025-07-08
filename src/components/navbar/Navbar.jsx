@@ -57,12 +57,24 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='navbar'>
       <ul className='nav-items'>
         {['home', 'about', 'skills', 'projects', 'contact'].map((item,index) => (
-          <li key={item} className={activeSection === item ? 'active' : ''} 
-          ref={(el) => (navItemsRef.current[index] = el)}>
+          <li
+            key={item}
+            className={activeSection === item ? 'active' : ''}
+            ref={(el) => (navItemsRef.current[index] = el)}
+            onClick={() => scrollToSection(item)} // <-- this makes it work
+            style={{ cursor: 'pointer' }}
+          >
             {item.charAt(0).toUpperCase() + item.slice(1)}
           </li>
         ))}
